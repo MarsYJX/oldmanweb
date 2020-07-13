@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>SB Admin</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+  <div class="container">
+    <div class="card card-register mx-auto mt-5">
+      <div class="card-header">注册一个管理员用户</div>
+      <div class="card-body">
+        <form action="/regist" method="post">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="exampleInputName">名字</label>
+                <input class="form-control" id="exampleInputName" type="text" name="name" placeholder="输入名字">
+              </div>
+              <div class="col-md-6">
+                <label for="exampleInputLastName">性别</label>
+                <input class="form-control" id="exampleInputLastName" type="text" name="sex" placeholder="输入性别">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">邮箱</label>
+            <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="输入邮箱" name="mail">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">手机号</label>
+            <input class="form-control" id="exampleInputEmail" type="email"  placeholder="输入手机号" name="phone">
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="exampleInputPassword1">密码</label>
+                <input class="form-control" id="exampleInputPassword1" type="password" placeholder="输入密码" name="password">
+              </div>
+              <div class="col-md-6">
+                <label for="exampleConfirmPassword">确认密码</label>
+                <input class="form-control" id="exampleConfirmPassword" type="password" placeholder="确认密码" name="cpassword">
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary btn-block" href="/regist">注册</a>
+        </form>
+        <div>--------------------------------------------------------------------------------------------</div>
+        <div class="text-center">
+          <a class="btn btn-primary btn-block" href="/index">返回</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+</body>
+
+</html>
